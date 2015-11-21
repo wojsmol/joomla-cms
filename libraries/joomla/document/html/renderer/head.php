@@ -111,7 +111,8 @@ class JDocumentRendererHead extends JDocumentRenderer
 		$buffer .= $tab . '<title>' . htmlspecialchars($document->getTitle(), ENT_COMPAT, 'UTF-8') . '</title>' . $lnEnd;
 
 		// Generate link declarations
-		if(property_exists($document, '_links')){
+		if (property_exists($document, '_links'))
+		{
 			foreach ($document->_links as $link => $linkAtrr)
 			{
 				$buffer .= $tab . '<link href="' . $link . '" ' . $linkAtrr['relType'] . '="' . $linkAtrr['relation'] . '"';
@@ -241,7 +242,8 @@ class JDocumentRendererHead extends JDocumentRenderer
 		}
 
 		// Output the custom tags - array_unique makes sure that we don't output the same tags twice
-		if(property_exists($document, '_custom')){
+		if (property_exists($document, '_custom'))
+		{
 			foreach (array_unique($document->_custom) as $custom)
 			{
 				$buffer .= $tab . $custom . $lnEnd;
