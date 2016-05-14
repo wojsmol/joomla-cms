@@ -122,10 +122,10 @@ class PlgUserJoomla extends JPlugin
 
 					// Compute the mail body.
 					$body_template = 'PLG_USER_JOOMLA_NEW_USER_EMAIL_BODY';
+
 					if ($this->params->get('include_password_in_mail_to_user', 1))
 					{
-						$emailBody = 
-							JText::sprintf(
+						$emailBody = JText::sprintf(
 								$body_template,
 								$user['name'],
 								$this->app->get('sitename'),
@@ -134,11 +134,10 @@ class PlgUserJoomla extends JPlugin
 								$user['password_clear']
 							);
 					}
-					else 
+					else
 					{
 						$body_template .= "_NOPW";
-						$emailBody =
-							JText::sprintf(
+						$emailBody = JText::sprintf(
 								$body_template,
 								$user['name'],
 								$this->app->get('sitename'),
