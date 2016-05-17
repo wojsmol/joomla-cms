@@ -113,7 +113,7 @@
 		description="COM_CATEGORIES_DESCRIPTION_DESC"
 		filter="JComponentHelper::filterText"
 		buttons="true"
-		hide="readmore,pagebreak"
+		hide="readmore,pagebreak,module"
 	/>
 
 	<field
@@ -259,7 +259,7 @@
 				description="COM_CATEGORIES_FIELD_IMAGE_DESC"
 			/>
 
-			<field 
+			<field
 				name="image_alt"
 				type="text"
 				label="COM_CATEGORIES_FIELD_IMAGE_ALT_LABEL"
