@@ -124,7 +124,7 @@ class ContenthistoryHelper
 						$valueText = null;
 						
 						if (is_array($optionFieldArray) && count($optionFieldArray))
-						{							
+						{
 							$valueText = trim((string) $optionFieldArray[0]);
 						}
 
