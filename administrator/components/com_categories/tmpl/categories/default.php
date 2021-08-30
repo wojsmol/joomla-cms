@@ -84,26 +84,26 @@ if ($saveOrder && !empty($this->items))
 								</th>
 								<?php if (isset($this->items[0]) && property_exists($this->items[0], 'count_published')) : ?>
 									<th scope="col" class="w-3 text-center d-none d-md-table-cell">
-										<span class="icon-check" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORY_COUNT_PUBLISHED_ITEMS'); ?>"></span>
-										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORY_COUNT_PUBLISHED_ITEMS'); ?></span>
+										<span class="icon-check" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORIES_COUNT_PUBLISHED_ITEMS'); ?>"></span>
+										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORIES_COUNT_PUBLISHED_ITEMS'); ?></span>
 									</th>
 								<?php endif; ?>
 								<?php if (isset($this->items[0]) && property_exists($this->items[0], 'count_unpublished')) : ?>
 									<th scope="col" class="w-3 text-center d-none d-md-table-cell">
-										<span class="icon-times" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORY_COUNT_UNPUBLISHED_ITEMS'); ?>"></span>
-										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORY_COUNT_UNPUBLISHED_ITEMS'); ?></span>
+										<span class="icon-times" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORIES_COUNT_UNPUBLISHED_ITEMS'); ?>"></span>
+										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORIES_COUNT_UNPUBLISHED_ITEMS'); ?></span>
 									</th>
 								<?php endif; ?>
 								<?php if (isset($this->items[0]) && property_exists($this->items[0], 'count_archived')) : ?>
 									<th scope="col" class="w-3 text-center d-none d-md-table-cell">
-										<span class="icon-folder icon-fw" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORY_COUNT_ARCHIVED_ITEMS'); ?>"></span>
-										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORY_COUNT_ARCHIVED_ITEMS'); ?></span>
+										<span class="icon-folder icon-fw" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORIES_COUNT_ARCHIVED_ITEMS'); ?>"></span>
+										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORIES_COUNT_ARCHIVED_ITEMS'); ?></span>
 									</th>
 								<?php endif; ?>
 								<?php if (isset($this->items[0]) && property_exists($this->items[0], 'count_trashed')) : ?>
 									<th scope="col" class="w-3 text-center d-none d-md-table-cell">
-										<span class="icon-trash" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORY_COUNT_TRASHED_ITEMS'); ?>"></span>
-										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORY_COUNT_TRASHED_ITEMS'); ?></span>
+										<span class="icon-trash" aria-hidden="true" title="<?php echo Text::_('COM_CATEGORIES_COUNT_TRASHED_ITEMS'); ?>"></span>
+										<span class="visually-hidden"><?php echo Text::_('COM_CATEGORIES_COUNT_TRASHED_ITEMS'); ?></span>
 									</th>
 								<?php endif; ?>
 								<th scope="col" class="w-10 d-none d-md-table-cell">
@@ -111,7 +111,7 @@ if ($saveOrder && !empty($this->items))
 								</th>
 								<?php if ($this->assoc) : ?>
 									<th scope="col" class="w-10 d-none d-md-table-cell">
-										<?php echo HTMLHelper::_('searchtools.sort', 'COM_CATEGORY_HEADING_ASSOCIATION', 'association', $listDirn, $listOrder); ?>
+										<?php echo HTMLHelper::_('searchtools.sort', 'COM_CATEGORIES_HEADING_ASSOCIATION', 'association', $listDirn, $listOrder); ?>
 									</th>
 								<?php endif; ?>
 								<?php if (Multilanguage::isEnabled()) : ?>
@@ -217,7 +217,7 @@ if ($saveOrder && !empty($this->items))
 												<?php echo $item->count_published; ?>
 											</a>
 											<div role="tooltip" id="tip-publish<?php echo $i; ?>">
-												<?php echo Text::_('COM_CATEGORY_COUNT_PUBLISHED_ITEMS'); ?>
+												<?php echo Text::_('COM_CATEGORIES_COUNT_PUBLISHED_ITEMS'); ?>
 											</div>
 										</td>
 									<?php endif; ?>
@@ -229,7 +229,7 @@ if ($saveOrder && !empty($this->items))
 												<?php echo $item->count_unpublished; ?>
 											</a>
 											<div role="tooltip" id="tip-unpublish<?php echo $i; ?>">
-												<?php echo Text::_('COM_CATEGORY_COUNT_UNPUBLISHED_ITEMS'); ?>
+												<?php echo Text::_('COM_CATEGORIES_COUNT_UNPUBLISHED_ITEMS'); ?>
 											</div>
 										</td>
 									<?php endif; ?>
@@ -241,7 +241,7 @@ if ($saveOrder && !empty($this->items))
 												<?php echo $item->count_archived; ?>
 											</a>
 											<div role="tooltip" id="tip-archive<?php echo $i; ?>">
-												<?php echo Text::_('COM_CATEGORY_COUNT_ARCHIVED_ITEMS'); ?>
+												<?php echo Text::_('COM_CATEGORIES_COUNT_ARCHIVED_ITEMS'); ?>
 											</div>
 										</td>
 									<?php endif; ?>
@@ -253,7 +253,7 @@ if ($saveOrder && !empty($this->items))
 												<?php echo $item->count_trashed; ?>
 											</a>
 											<div role="tooltip" id="tip-trash<?php echo $i; ?>">
-												<?php echo Text::_('COM_CATEGORY_COUNT_TRASHED_ITEMS'); ?>
+												<?php echo Text::_('COM_CATEGORIES_COUNT_TRASHED_ITEMS'); ?>
 											</div>
 										</td>
 									<?php endif; ?>
